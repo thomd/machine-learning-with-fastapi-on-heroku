@@ -28,7 +28,7 @@ Test model with:
 
     import pickle
     model = pickle.load(open('model/model.pkl', 'rb'))
-    p = model.predict_proba([[7,100,72,23,30.5,30.0,0.484,32,1]])
+    p = model.predict_proba([[7,100,72,23,30.5,30.0,0.484,32]])
     print(p)
 
 ## 3. FastAPI Application
@@ -51,3 +51,8 @@ and open Swagger-UI:
     heroku logs --tail
     heroku open
 
+## 5. Use API
+
+    curl -s 'https://predict-diabetes-1.herokuapp.com/predict' \
+         -H 'Content-Type: application/json' \
+         -d '{"pregnancies":1,"glucose":89,"bp":66,"skinthickness":23,"insulin":94,"bmi":43,"dpf":0.167,"age":21}'
