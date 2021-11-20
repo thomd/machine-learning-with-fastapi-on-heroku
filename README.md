@@ -10,4 +10,10 @@ Create Environment
     conda env create --file environment.yaml
     conda activate ml-fastapi-heroku
 
+## Data
+
+Compare original dataset with cleaned dataset with
+
+    npx daff --www data/original/diabetes.csv data/diabetes.csv
+
 
