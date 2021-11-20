@@ -10,14 +10,16 @@ Create Environment
     conda env create --file environment.yaml
     conda activate ml-fastapi-heroku
 
-## Data Analysis and Cleaning
+## 1. Data Analysis and Cleaning
 
-We use the [Pima Indians Diabetes Database](https://data.world/data-society/pima-indians-diabetes-database) to create a prediciton model.
+Data is from the [Pima Indians Diabetes Database](https://data.world/data-society/pima-indians-diabetes-database).
 
-First we analyse and clean the data: [data-analysis.ipynb](./data-analysis.ipynb)
+Analyse and clean the data: [data-analysis.ipynb](./data-analysis.ipynb)
 
 Compare original dataset with cleaned dataset with
 
     npx daff --www data/original/diabetes.csv data/diabetes.csv
 
+## 2. Train Prediction Model
 
+Traing of a model using a **random forest classifier**: [train-model.ipynb](./train-model.ipynb)
