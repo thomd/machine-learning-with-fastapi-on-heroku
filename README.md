@@ -28,16 +28,16 @@ Test model with:
 
     import pickle
     model = pickle.load(open('model/model.pkl', 'rb'))
-    p = model.predict_proba([[2,150,100,23,125,28,1,42]])
+    p = model.predict_proba([[7,100,72,23,30.5,30.0,0.484,32,1]])
     print(p)
 
 ## 3. FastAPI Application
 
-Start API server with
+For local testing, start server with
 
     uvicorn app:app --reload
 
-Open Swagger UI:
+and open Swagger-UI:
 
     open http://localhost:8000/docs
 
