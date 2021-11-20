@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
 import uvicorn
 import pickle
 from pydantic import BaseModel
@@ -20,8 +21,8 @@ class Women(BaseModel):
 
 
 @app.get("/")
-def redirect():
-    return RedirectResponse(url="/predict")
+def docs():
+    return RedirectResponse(url="/docs")
 
 
 @app.post("/predict")

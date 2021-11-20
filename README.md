@@ -48,4 +48,6 @@ Open Swagger UI:
     heroku create predict-diabetes-1
     git push heroku main
     heroku ps:scale web=1
+    heroku logs --tail
     heroku open
+
