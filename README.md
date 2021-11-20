@@ -41,3 +41,7 @@ Open Swagger UI:
 
     open http://localhost:8000/docs
 
+## 4. Deploy on Heroku
+
+    pip freeze > requirements.txt
+
