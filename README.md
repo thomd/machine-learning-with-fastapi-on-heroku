@@ -43,6 +43,7 @@ Open Swagger UI:
 
 ## 4. Deploy on Heroku
 
+    pip list --format=freeze > requirements.txt
     heroku login
     heroku create predict-diabetes-1
     git push heroku main
